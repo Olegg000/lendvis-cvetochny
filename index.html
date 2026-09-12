@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Центральный цветочный магазин — Самара, ул. Победы, 122</title>
+<meta name="description" content="Авторские букеты, французские розы, пионы, гортензии. Доставка по Самаре в день заказа. Ежедневно 9:00–21:00.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Golos+Text:wght@400;500;600&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>">
+<style>
+:root{
+  --bone:#F6F1EA; --paper:#FCFAF7; --ink:#1C1A19; --ink-soft:#5C5551;
+  --rose:#C4747E; --rose-deep:#8E4450; --line:#E3DACE; --shadow:rgba(40,28,24,.10);
+  --pad:clamp(20px,5vw,90px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bone);color:var(--ink);font:400 16px/1.6 "Golos Text",system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;border:0;background:0;cursor:pointer}
+.serif{font-family:"Cormorant Garamond",Georgia,serif;font-weight:300;letter-spacing:-.01em}
+.eyebrow{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-soft);font-weight:500}
+.wrap{padding-inline:var(--pad)}
+
+/* ————— header ————— */
+header{position:fixed;inset:0 0 auto;z-index:60;display:flex;align-items:center;justify-content:space-between;
+  padding:18px var(--pad);background:rgba(246,241,234,.74);backdrop-filter:blur(11px);transition:background .4s,box-shadow .4s,padding .4s}
+header.solid{background:rgba(246,241,234,.93);box-shadow:0 1px 0 var(--line);padding-block:12px}
+.logo{display:flex;align-items:center;gap:11px;font-family:"Cormorant Garamond",serif;font-size:22px;letter-spacing:.02em}
+.logo b{font-weight:500;letter-spacing:.12em;font-size:19px}
+.logo span{font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-soft);line-height:1.3;font-family:"Golos Text",sans-serif;border-left:1px solid var(--line);padding-left:11px}
+nav{display:flex;gap:30px;font-size:13.5px}
+nav a{position:relative;padding-block:4px;color:var(--ink-soft)}
+nav a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:1px;background:var(--rose);transition:width .35s}
+nav a:hover{color:var(--ink)}nav a:hover::after{width:100%}
+.head-r{display:flex;align-items:center;gap:18px}
+.tel{font-size:13.5px;font-weight:500;white-space:nowrap}
+.cart-btn{display:flex;align-items:center;gap:8px;border:1px solid var(--ink);border-radius:100px;padding:9px 17px;font-size:13px;transition:.3s}
+.cart-btn:hover{background:var(--ink);color:var(--bone)}
+.cart-btn i{font-style:normal;min-width:18px;height:18px;border-radius:50%;background:var(--rose);color:#fff;font-size:11px;display:grid;place-items:center;transition:.3s}
+.cart-btn.pulse{animation:pop .45s}
+@keyframes pop{50%{transform:scale(1.09)}}
+@media(max-width:900px){nav,.tel{display:none}}
+
+/* ————— hero ————— */
+.hero{min-height:100svh;display:grid;grid-template-columns:1.05fr .95fr;align-items:stretch}
+.hero-txt{display:flex;flex-direction:column;justify-content:center;padding:120px var(--pad) 60px;position:relative}
+.hero h1{font-size:clamp(52px,7.4vw,124px);line-height:.93;margin:22px 0 0}
+.hero h1 em{font-style:italic;color:var(--rose-deep)}
+.hero h1 .w{display:inline-block;opacity:0;transform:translateY(.38em);animation:rise .95s cubic-bezier(.2,.7,.2,1) forwards}
+@keyframes rise{to{opacity:1;transform:none}}
+.hero p.lead{margin:28px 0 0;max-width:40ch;color:var(--ink-soft);font-size:16.5px}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:38px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 28px;border-radius:100px;font-size:14px;font-weight:500;transition:.3s;white-space:nowrap}
+.btn-dark{background:var(--ink);color:var(--bone)}
+.btn-dark:hover{background:var(--rose-deep);transform:translateY(-2px)}
+.btn-ghost{border:1px solid var(--line);color:var(--ink)}
+.btn-ghost:hover{border-color:var(--ink);transform:translateY(-2px)}
+.hero-meta{display:flex;gap:28px;flex-wrap:wrap;margin-top:52px;padding-top:24px;border-top:1px solid var(--line);font-size:12.5px;color:var(--ink-soft)}
+.hero-meta b{display:block;font-family:"Cormorant Garamond",serif;font-size:27px;font-weight:400;color:var(--ink);line-height:1.1}
+.hero-img{position:relative;background:#ded3c8}
+.kb{position:absolute;inset:0;overflow:hidden}
+.kb img{width:100%;height:100%;object-fit:cover;object-position:52% 30%;animation:kb 22s ease-in-out infinite alternate}
+@keyframes kb{to{transform:scale(1.08)}}
+.badge{position:absolute;left:-46px;bottom:56px;background:var(--paper);border-radius:3px;padding:17px 22px;box-shadow:0 18px 44px var(--shadow);max-width:230px}
+.badge .st{font-family:"Cormorant Garamond",serif;font-size:34px;line-height:1;display:flex;align-items:baseline;gap:7px}
+.badge .st small{font-size:12px;font-family:"Golos Text",sans-serif;color:var(--ink-soft)}
+.badge p{font-size:11.5px;color:var(--ink-soft);margin-top:5px;line-height:1.45}
+@media(max-width:860px){
+  .hero{grid-template-columns:1fr;min-height:auto}
+  .hero-txt{order:2;padding-top:52px}
+  .hero-img{order:1;height:64svh;min-height:400px}
+  .kb img{object-position:52% 10%}
+  .badge{left:auto;right:16px;bottom:16px;max-width:200px}
+}
+
+/* ————— sections ————— */
+section{position:relative}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:40px}
+.sec-head h2{font-size:clamp(36px,5vw,74px);line-height:1}
+.sec-head h2 em{font-style:italic;color:var(--rose-deep)}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+
+/* ————— catalog ————— */
+#catalog{padding-block:clamp(70px,9vw,130px)}
+.filters{display:flex;gap:9px;flex-wrap:wrap}
+.chip{padding:9px 17px;border:1px solid var(--line);border-radius:100px;font-size:12.5px;color:var(--ink-soft);transition:.25s}
+.chip:hover{border-color:var(--ink);color:var(--ink)}
+.chip.on{background:var(--ink);border-color:var(--ink);color:var(--bone)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(255px,1fr));gap:clamp(18px,2.4vw,34px)}
+.card{position:relative;opacity:0;transform:translateY(22px);transition:opacity .6s,transform .6s}
+.card.in{opacity:1;transform:none}
+.card.hide{display:none}
+.ph{position:relative;overflow:hidden;background:#e8dfd5;aspect-ratio:4/5;border-radius:2px}
+.ph img{width:100%;height:100%;object-fit:cover;transition:transform 1.1s cubic-bezier(.2,.7,.2,1)}
+.card:hover .ph img{transform:scale(1.06)}
+.tagline{position:absolute;top:12px;left:12px;background:rgba(252,250,247,.94);border-radius:100px;padding:5px 11px;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--rose-deep);font-weight:500}
+.add{position:absolute;left:12px;right:12px;bottom:12px;background:var(--paper);color:var(--ink);border-radius:100px;padding:13px;font-size:13px;font-weight:500;
+  opacity:0;transform:translateY(12px);transition:.35s cubic-bezier(.2,.7,.2,1)}
+.card:hover .add,.card:focus-within .add{opacity:1;transform:none}
+.add:hover{background:var(--ink);color:var(--bone)}
+.add.done{background:var(--rose-deep);color:#fff}
+@media(hover:none){.add{opacity:1;transform:none}}
+.info{display:flex;justify-content:space-between;align-items:baseline;gap:14px;margin-top:15px}
+.info h3{font-size:17px;font-weight:500;line-height:1.3}
+.info .pr{font-family:"Cormorant Garamond",serif;font-size:24px;white-space:nowrap}
+.info + p{font-size:12.5px;color:var(--ink-soft);margin-top:6px;line-height:1.5}
+
+/* ————— quote band ————— */
+.band{position:relative;min-height:74svh;display:grid;place-items:center;text-align:center;overflow:hidden;color:#fff;padding:90px var(--pad)}
+.band img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.band::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,20,48,.52),rgba(12,20,48,.62))}
+.band .in-q{position:relative;z-index:2}
+.band blockquote{max-width:19ch;margin-inline:auto;font-family:"Cormorant Garamond",serif;font-weight:300;font-size:clamp(34px,5.6vw,80px);line-height:1.06}
+.band blockquote em{font-style:italic}
+.band p{margin-top:26px;font-size:13.5px;opacity:.82;max-width:46ch;margin-inline:auto;line-height:1.7}
+
+/* ————— steps ————— */
+#how{padding-block:clamp(70px,9vw,130px)}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:clamp(24px,3vw,52px);margin-top:46px}
+.step{border-top:1px solid var(--line);padding-top:22px}
+.step b{font-family:"Cormorant Garamond",serif;font-size:44px;font-weight:300;color:var(--rose);display:block;line-height:1}
+.step h4{font-size:17px;font-weight:500;margin:12px 0 8px}
+.step p{font-size:13.5px;color:var(--ink-soft);line-height:1.65}
+
+/* ————— marquee ————— */
+.marq{overflow:hidden;padding-block:clamp(40px,5vw,70px);mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent)}
+.track{display:flex;gap:16px;width:max-content;animation:slide 46s linear infinite}
+.marq:hover .track{animation-play-state:paused}
+@keyframes slide{to{transform:translateX(-50%)}}
+.track img{height:clamp(210px,25vw,330px);width:auto;border-radius:2px;object-fit:cover;filter:saturate(.96)}
+
+/* ————— contacts ————— */
+#contacts{padding-block:clamp(70px,9vw,120px) 0}
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,64px);align-items:center}
+.cgrid .shot{border-radius:2px;overflow:hidden;box-shadow:0 22px 60px var(--shadow)}
+.cgrid .shot img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.clist{margin-top:32px;display:grid;gap:1px;background:var(--line);border-block:1px solid var(--line)}
+.crow{background:var(--bone);display:grid;grid-template-columns:120px 1fr;gap:18px;padding:17px 2px;font-size:14.5px;align-items:baseline}
+.crow span{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft)}
+.crow b{font-weight:500}
+.crow a{border-bottom:1px solid var(--line)}
+.crow a:hover{border-color:var(--rose)}
+.mapbox{margin-top:clamp(40px,6vw,80px);height:clamp(300px,42vh,460px);border-top:1px solid var(--line)}
+.mapbox iframe{width:100%;height:100%;border:0;filter:grayscale(.35) contrast(1.02)}
+@media(max-width:820px){.cgrid{grid-template-columns:1fr}}
+
+/* ————— footer ————— */
+footer{padding:44px var(--pad);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:12px;color:var(--ink-soft);border-top:1px solid var(--line)}
+.demo-note{background:var(--ink);color:#CFC6BC;padding:22px var(--pad);font-size:12.5px;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;align-items:center;line-height:1.6}
+.demo-note b{color:#fff;font-weight:500}
+.demo-note a{color:#fff;border-bottom:1px solid rgba(255,255,255,.35)}
+.demo-note>div:first-child{max-width:58ch}
+.studio{display:flex;align-items:center;gap:18px;white-space:nowrap}
+.studio .mark{font-family:"Rubik Mono One",monospace;font-size:13px;letter-spacing:.02em;color:#fff}
+.studio .by{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#8A817A}
+
+/* ————— cart drawer ————— */
+.scrim{position:fixed;inset:0;background:rgba(28,26,25,.44);backdrop-filter:blur(3px);opacity:0;pointer-events:none;transition:.4s;z-index:80}
+.scrim.on{opacity:1;pointer-events:auto}
+.drawer{position:fixed;top:0;right:0;bottom:0;width:min(440px,100%);background:var(--paper);z-index:90;transform:translateX(101%);transition:transform .48s cubic-bezier(.2,.75,.2,1);display:flex;flex-direction:column}
+.drawer.on{transform:none;box-shadow:-20px 0 60px rgba(40,28,24,.18)}
+.dh{display:flex;justify-content:space-between;align-items:center;padding:22px 26px;border-bottom:1px solid var(--line)}
+.dh h3{font-family:"Cormorant Garamond",serif;font-size:29px;font-weight:400}
+.x{font-size:26px;line-height:1;color:var(--ink-soft);transition:.25s}
+.x:hover{color:var(--ink);transform:rotate(90deg)}
+.dbody{flex:1;overflow-y:auto;padding:8px 26px 20px}
+.empty{text-align:center;color:var(--ink-soft);font-size:14px;padding:70px 0}
+.li{display:grid;grid-template-columns:64px 1fr auto;gap:14px;padding:16px 0;border-bottom:1px solid var(--line);align-items:center}
+.li img{width:64px;height:78px;object-fit:cover;border-radius:2px}
+.li h5{font-size:14px;font-weight:500;line-height:1.35}
+.li .p{font-size:12.5px;color:var(--ink-soft);margin-top:3px}
+.qty{display:flex;align-items:center;gap:2px;margin-top:8px}
+.qty button{width:25px;height:25px;border:1px solid var(--line);border-radius:50%;font-size:14px;line-height:1;display:grid;place-items:center;transition:.2s}
+.qty button:hover{border-color:var(--ink)}
+.qty span{min-width:28px;text-align:center;font-size:13.5px}
+.rm{font-size:11px;color:var(--ink-soft);border-bottom:1px solid var(--line);align-self:flex-start}
+.rm:hover{color:var(--rose-deep)}
+.dfoot{border-top:1px solid var(--line);padding:20px 26px 24px;background:var(--paper)}
+.total{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px}
+.total .s{font-family:"Cormorant Garamond",serif;font-size:32px}
+.deliv{font-size:11.5px;color:var(--ink-soft);margin-bottom:16px}
+.form{display:grid;gap:9px;margin-bottom:14px}
+.form input,.form textarea,.form select{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:2px;background:var(--bone);font:inherit;font-size:13.5px;color:var(--ink)}
+.form input:focus,.form textarea:focus,.form select:focus{outline:0;border-color:var(--rose)}
+.form .two{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.form textarea{resize:vertical;min-height:52px}
+.send{width:100%;background:var(--ink);color:var(--bone);border-radius:100px;padding:16px;font-size:14px;font-weight:500;transition:.3s}
+.send:hover{background:var(--rose-deep)}
+.send:disabled{opacity:.4;cursor:not-allowed}
+.hint{font-size:11px;color:var(--ink-soft);text-align:center;margin-top:10px;line-height:1.5}
+
+.toast{position:fixed;left:50%;bottom:26px;transform:translate(-50%,140%);background:var(--ink);color:var(--bone);padding:13px 24px;border-radius:100px;font-size:13.5px;z-index:120;transition:transform .45s cubic-bezier(.2,.75,.2,1)}
+.toast.on{transform:translate(-50%,0)}
+
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition-duration:.01ms!important}.reveal,.card{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<header id="hdr">
+  <a href="#top" class="logo"><b>ЦЦМ</b><span>Центральный<br>цветочный</span></a>
+  <nav>
+    <a href="#catalog">Витрина</a>
+    <a href="#how">Доставка</a>
+    <a href="#gallery">Наши работы</a>
+    <a href="#contacts">Контакты</a>
+  </nav>
+  <div class="head-r">
+    <a class="tel" href="tel:+79272965244">+7 927 296-52-44</a>
+    <button class="cart-btn" id="cartBtn">Корзина <i id="cnt">0</i></button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero-txt">
+    <p class="eyebrow">Самара · ул. Победы, 122</p>
+    <h1 class="serif"><span class="w">Букеты,</span> <span class="w">которые</span><br><span class="w"><em>говорят</em></span> <span class="w">за</span> <span class="w">вас</span></h1>
+    <p class="lead">Собираем авторские букеты из свежего среза каждое утро. Привезём по Самаре в день заказа — бережно, вовремя и с открыткой в подарок.</p>
+    <div class="hero-cta">
+      <a href="#catalog" class="btn btn-dark">Выбрать букет →</a>
+      <a href="tel:+79272965244" class="btn btn-ghost">Позвонить флористу</a>
+    </div>
+    <div class="hero-meta">
+      <div><b>5,0</b>рейтинг на Яндекс Картах</div>
+      <div><b>107</b>отзывов покупателей</div>
+      <div><b>9–21</b>ежедневно, без выходных</div>
+    </div>
+  </div>
+  <div class="hero-img">
+    <div class="kb"><img src="img/g05.jpg" alt="Букет из пионовидных роз и гортензии"></div>
+    <div class="badge">
+      <div class="st">0 ₽ <small>доставка</small></div>
+      <p>По городу — бесплатно при заказе авторского букета</p>
+    </div>
+  </div>
+</section>
+
+<!-- CATALOG -->
+<section id="catalog" class="wrap">
+  <div class="sec-head reveal">
+    <div>
+      <p class="eyebrow">Витрина</p>
+      <h2 class="serif">Что можно <em>заказать</em> сегодня</h2>
+    </div>
+    <div class="filters" id="filters">
+      <button class="chip on" data-f="all">Все</button>
+      <button class="chip" data-f="avt">Авторские</button>
+      <button class="chip" data-f="roz">Розы</button>
+      <button class="chip" data-f="mono">Моно</button>
+      <button class="chip" data-f="cheap">До 3000 ₽</button>
+    </div>
+  </div>
+  <div class="grid" id="grid"></div>
+</section>
+
+<!-- BAND -->
+<section class="band">
+  <img src="img/g03.jpg" alt="">
+  <div class="in-q">
+    <blockquote class="serif">Каждый букет<br><em>собирается</em> вручную</blockquote>
+    <p>Никаких заготовок со склада. Флорист собирает букет после вашего звонка — из того, что пришло свежим сегодня утром.</p>
+  </div>
+</section>
+
+<!-- HOW -->
+<section id="how" class="wrap">
+  <div class="sec-head reveal">
+    <div>
+      <p class="eyebrow">Как это работает</p>
+      <h2 class="serif">Четыре шага <em>до вручения</em></h2>
+    </div>
+  </div>
+  <div class="steps">
+    <div class="step reveal"><b>01</b><h4>Выбираете букет</h4><p>Прямо на сайте — с ценой и фото. Или звоните, и флорист подберёт под повод и бюджет.</p></div>
+    <div class="step reveal"><b>02</b><h4>Мы перезваниваем</h4><p>Уточняем состав, дату и время. Присылаем фото готового букета до отправки курьеру.</p></div>
+    <div class="step reveal"><b>03</b><h4>Везём по Самаре</h4><p>В день заказа. По городу бесплатно, точный интервал согласуем — сюрприз не испортим.</p></div>
+    <div class="step reveal"><b>04</b><h4>Вручаем с открыткой</h4><p>Тематическая открытка в подарок к каждому заказу. Пришлём фото момента вручения.</p></div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="wrap sec-head reveal" style="margin-bottom:6px">
+    <div>
+      <p class="eyebrow">Наши работы</p>
+      <h2 class="serif">Собрано <em>этой весной</em></h2>
+    </div>
+    <a class="btn btn-ghost" href="https://yandex.ru/maps/org/190909200559/gallery/" target="_blank" rel="noopener">Все 75 фото на Картах →</a>
+  </div>
+  <div class="marq">
+    <div class="track" id="track"></div>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section id="contacts" class="wrap">
+  <div class="cgrid">
+    <div class="shot reveal"><img src="img/g01.jpg" alt="Вход в магазин на улице Победы, 122"></div>
+    <div class="reveal">
+      <p class="eyebrow">Контакты</p>
+      <h2 class="serif" style="font-size:clamp(34px,4.4vw,62px);line-height:1;margin-top:10px">Заходите <em>в магазин</em></h2>
+      <div class="clist">
+        <div class="crow"><span>Адрес</span><b>Самара, ул. Победы, 122<br><em style="font-weight:400;color:var(--ink-soft);font-style:normal;font-size:13px">1,4 км от метро «Безымянка»</em></b></div>
+        <div class="crow"><span>Телефон</span><b><a href="tel:+79272965244">+7 927 296-52-44</a></b></div>
+        <div class="crow"><span>Режим</span><b>Ежедневно 9:00 — 21:00<br><em style="font-weight:400;color:var(--ink-soft);font-style:normal;font-size:13px">без перерыва и выходных</em></b></div>
+        <div class="crow"><span>Доставка</span><b>По Самаре — в день заказа</b></div>
+      </div>
+      <div class="hero-cta">
+        <a class="btn btn-dark" href="https://wa.me/79272965244" target="_blank" rel="noopener">Написать в WhatsApp</a>
+        <a class="btn btn-ghost" href="https://yandex.ru/maps/org/190909200559/" target="_blank" rel="noopener">Открыть на Картах</a>
+      </div>
+    </div>
+  </div>
+  <div class="mapbox reveal">
+    <iframe loading="lazy" title="Карта" src="https://yandex.ru/map-widget/v1/?ll=50.265537%2C53.220886&z=17&pt=50.265537,53.220886,pm2rdm"></iframe>
+  </div>
+</section>
+
+<footer>
+  <div>© Центральный цветочный магазин · Самара, ул. Победы, 122</div>
+  <div>Цены и фото — с карточки магазина на Яндекс Картах · макет студии <a href="https://lendvis.ru" target="_blank" rel="noopener" style="border-bottom:1px solid var(--line)">Лендвис</a></div>
+</footer>
+
+<div class="demo-note">
+  <div><b>Это демонстрационный макет, а не официальный сайт магазина.</b> Собран на ваших же фотографиях и ценах с карточки Яндекс Карт, чтобы показать, как может выглядеть витрина с заказом онлайн.</div>
+  <div class="studio">
+    <span class="by">Разработка</span>
+    <span class="mark">ЛЕНДВИС</span>
+    <a href="https://lendvis.ru" target="_blank" rel="noopener">lendvis.ru</a>
+    <a href="https://t.me/lendvis" target="_blank" rel="noopener">Telegram</a>
+  </div>
+</div>
+
+<!-- CART -->
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-label="Корзина">
+  <div class="dh"><h3>Ваш заказ</h3><button class="x" id="closeCart" aria-label="Закрыть">×</button></div>
+  <div class="dbody" id="dbody"></div>
+  <div class="dfoot">
+    <div class="total"><span>Итого</span><span class="s" id="sum">0 ₽</span></div>
+    <div class="deliv" id="deliv">Доставка по Самаре — бесплатно</div>
+    <div class="form">
+      <input id="f-name" placeholder="Ваше имя" autocomplete="name">
+      <div class="two">
+        <input id="f-tel" placeholder="Телефон" inputmode="tel" autocomplete="tel">
+        <input id="f-date" type="date" aria-label="Дата доставки">
+      </div>
+      <input id="f-addr" placeholder="Адрес доставки (или «самовывоз»)">
+      <textarea id="f-note" placeholder="Текст на открытке, пожелания к букету"></textarea>
+    </div>
+    <button class="send" id="send">Отправить заказ в WhatsApp</button>
+    <p class="hint">Это демо: заказ откроется готовым сообщением в WhatsApp магазина — ничего не спишется автоматически.</p>
+  </div>
+</aside>
+
+<div class="toast" id="toast"></div>
+
+<script>
+const PHONE="79272965244";
+const P=[
+ {id:1,t:"Французские красные розы",p:3200,img:"p01",tag:["roz"],d:"Гарантия качества · открытка в подарок",lab:"хит"},
+ {id:2,t:"Гипсофила в сумочках",p:2200,img:"p02",tag:["mono","cheap"],d:"Более 3 расцветок в наличии"},
+ {id:3,t:"Авторский нежный букет",p:3600,img:"p03",tag:["avt"],d:"Бесплатная доставка по городу"},
+ {id:4,t:"Французские розы в коробке",p:2900,img:"p04",tag:["roz","cheap"],d:"Более семи расцветок роз в наличии"},
+ {id:5,t:"Авторская нежная корзина",p:8200,img:"p05",tag:["avt"],d:"Бесплатная доставка · открытка в подарок",lab:"большая"},
+ {id:6,t:"Авторский яркий букет",p:4000,img:"p06",tag:["avt"],d:"Быстрая бесплатная доставка по городу"},
+ {id:7,t:"Гортензии",p:2100,img:"p07",tag:["mono","cheap"],d:"Бережная доставка · открытка в подарок"},
+ {id:8,t:"Авторский гигант",p:9500,img:"p08",tag:["avt"],d:"Бесплатная доставка по городу",lab:"вау-эффект"},
+ {id:9,t:"Белоснежные хризантемы",p:2700,img:"p09",tag:["mono","cheap"],d:"Гарантия качества · бережная доставка"},
+ {id:10,t:"Гигант из ромашковых хризантем",p:5750,img:"p10",tag:["mono"],d:"Гарантия качества · бережная доставка"},
+ {id:11,t:"Пионовидные розы",p:6200,img:"p11",tag:["roz"],d:"Бережная доставка · открытка в подарок"},
+ {id:12,t:"Авторский с орхидеей",p:2900,img:"p12",tag:["avt","cheap"],d:"Бесплатная доставка по городу"}
+];
+const rub=n=>n.toLocaleString("ru-RU")+" ₽";
+const $=s=>document.querySelector(s);
+
+/* catalog */
+$("#grid").innerHTML=P.map(o=>`
+<article class="card" data-tag="${o.tag.join(" ")}">
+  <div class="ph">
+    ${o.lab?`<span class="tagline">${o.lab}</span>`:""}
+    <img src="img/${o.img}.jpg" alt="${o.t}" loading="lazy">
+    <button class="add" data-id="${o.id}">В корзину</button>
+  </div>
+  <div class="info"><h3>${o.t}</h3><div class="pr">${rub(o.p)}</div></div>
+  <p>${o.d}</p>
+</article>`).join("");
+
+$("#track").innerHTML=[...Array(2)].map(()=>
+  ["g05","g02","g07","g04","g09","g10","g06","g08"].map(g=>`<img src="img/${g}.jpg" alt="" loading="lazy">`).join("")
+).join("");
+
+/* filters */
+$("#filters").onclick=e=>{
+  const b=e.target.closest(".chip"); if(!b) return;
+  document.querySelectorAll(".chip").forEach(c=>c.classList.toggle("on",c===b));
+  const f=b.dataset.f;
+  document.querySelectorAll(".card").forEach(c=>c.classList.toggle("hide",f!=="all"&&!c.dataset.tag.split(" ").includes(f)));
+};
+
+/* cart */
+let cart=JSON.parse(localStorage.getItem("ccm-cart")||"{}");
+const save=()=>localStorage.setItem("ccm-cart",JSON.stringify(cart));
+const count=()=>Object.values(cart).reduce((a,b)=>a+b,0);
+const total=()=>Object.entries(cart).reduce((a,[id,q])=>a+P.find(p=>p.id==id).p*q,0);
+
+function render(){
+  $("#cnt").textContent=count();
+  const ids=Object.keys(cart);
+  $("#dbody").innerHTML=ids.length?ids.map(id=>{
+    const o=P.find(p=>p.id==id);
+    return `<div class="li">
+      <img src="img/${o.img}.jpg" alt="">
+      <div><h5>${o.t}</h5><div class="p">${rub(o.p)}</div>
+        <div class="qty"><button data-m="-1" data-id="${id}">−</button><span>${cart[id]}</span><button data-m="1" data-id="${id}">+</button></div>
+      </div>
+      <button class="rm" data-rm="${id}">убрать</button>
+    </div>`}).join(""):`<p class="empty">Корзина пока пуста.<br>Выберите букет на витрине.</p>`;
+  $("#sum").textContent=rub(total());
+  $("#deliv").textContent=total()>=3000?"Доставка по Самаре — бесплатно":"Доставка по Самаре — бесплатно от 3000 ₽";
+  $("#send").disabled=!ids.length;
+  save();
+}
+function toast(m){const t=$("#toast");t.textContent=m;t.classList.add("on");clearTimeout(t._);t._=setTimeout(()=>t.classList.remove("on"),2100)}
+function openCart(o){$("#drawer").classList.toggle("on",o);$("#scrim").classList.toggle("on",o);document.body.style.overflow=o?"hidden":""}
+
+$("#grid").onclick=e=>{
+  const b=e.target.closest(".add"); if(!b) return;
+  const id=b.dataset.id; cart[id]=(cart[id]||0)+1; render();
+  b.textContent="Добавлено ✓"; b.classList.add("done");
+  setTimeout(()=>{b.textContent="В корзину";b.classList.remove("done")},1200);
+  $("#cartBtn").classList.add("pulse"); setTimeout(()=>$("#cartBtn").classList.remove("pulse"),450);
+  toast(P.find(p=>p.id==id).t+" — в корзине");
+};
+$("#dbody").onclick=e=>{
+  const q=e.target.closest("[data-m]"), r=e.target.closest("[data-rm]");
+  if(q){const id=q.dataset.id;cart[id]+= +q.dataset.m; if(cart[id]<1) delete cart[id]; render()}
+  if(r){delete cart[r.dataset.rm]; render()}
+};
+$("#cartBtn").onclick=()=>openCart(true);
+$("#closeCart").onclick=$("#scrim").onclick=()=>openCart(false);
+addEventListener("keydown",e=>e.key==="Escape"&&openCart(false));
+
+$("#send").onclick=()=>{
+  const n=$("#f-name").value.trim(), t=$("#f-tel").value.trim();
+  if(!n||!t){toast("Укажите имя и телефон");(!n?$("#f-name"):$("#f-tel")).focus();return}
+  const lines=Object.entries(cart).map(([id,q])=>{const o=P.find(p=>p.id==id);return `• ${o.t} × ${q} — ${rub(o.p*q)}`});
+  const d=$("#f-date").value, a=$("#f-addr").value.trim(), c=$("#f-note").value.trim();
+  const msg=["Здравствуйте! Заказ с сайта:","",...lines,"",`Итого: ${rub(total())}`,"",
+    `Имя: ${n}`,`Телефон: ${t}`,
+    ...(d?[`Дата: ${new Date(d).toLocaleDateString("ru-RU")}`]:[]),
+    ...(a?[`Адрес: ${a}`]:[]),
+    ...(c?["",`Пожелания: ${c}`]:[])].join("\n");
+  open(`https://wa.me/${PHONE}?text=`+encodeURIComponent(msg),"_blank","noopener");
+};
+
+/* scroll fx */
+const io=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&(e.target.classList.add("in"),io.unobserve(e.target))),{threshold:.12});
+document.querySelectorAll(".reveal,.card").forEach((el,i)=>{el.style.transitionDelay=(i%4*60)+"ms";io.observe(el)});
+addEventListener("scroll",()=>$("#hdr").classList.toggle("solid",scrollY>60),{passive:true});
+document.querySelectorAll(".hero h1 .w").forEach((w,i)=>w.style.animationDelay=(.12+i*.08)+"s");
+$("#f-date").min=new Date().toISOString().slice(0,10);
+render();
+</script>
+</body>
+</html>
