@@ -64,7 +64,7 @@ nav a:hover{color:var(--ink)}nav a:hover::after{width:100%}
 .hero-meta b{display:block;font-family:"Cormorant Garamond",serif;font-size:27px;font-weight:400;color:var(--ink);line-height:1.1}
 .hero-img{position:relative;background:#ded3c8}
 .kb{position:absolute;inset:0;overflow:hidden}
-.kb img{width:100%;height:100%;object-fit:cover;object-position:52% 30%;animation:kb 22s ease-in-out infinite alternate}
+.kb img{width:100%;height:100%;object-fit:cover;object-position:50% 42%;animation:kb 22s ease-in-out infinite alternate}
 @keyframes kb{to{transform:scale(1.08)}}
 .badge{position:absolute;left:-46px;bottom:56px;background:var(--paper);border-radius:3px;padding:17px 22px;box-shadow:0 18px 44px var(--shadow);max-width:230px}
 .badge .st{font-family:"Cormorant Garamond",serif;font-size:34px;line-height:1;display:flex;align-items:baseline;gap:7px}
@@ -74,7 +74,7 @@ nav a:hover{color:var(--ink)}nav a:hover::after{width:100%}
   .hero{grid-template-columns:1fr;min-height:auto}
   .hero-txt{order:2;padding-top:52px}
   .hero-img{order:1;height:64svh;min-height:400px}
-  .kb img{object-position:52% 10%}
+  .kb img{object-position:50% 38%}
   .badge{left:auto;right:16px;bottom:16px;max-width:200px}
 }
 
@@ -234,7 +234,7 @@ footer{padding:44px var(--pad);display:flex;justify-content:space-between;gap:20
     </div>
   </div>
   <div class="hero-img">
-    <div class="kb"><img src="img/g05.jpg" alt="Букет из пионовидных роз и гортензии"></div>
+    <div class="kb"><img src="img/g07.jpg" alt="Букет пионов у витрины магазина"></div>
     <div class="badge">
       <div class="st">0 ₽ <small>доставка</small></div>
       <p>По городу — бесплатно при заказе авторского букета</p>
@@ -394,7 +394,7 @@ $("#grid").innerHTML=P.map(o=>`
 </article>`).join("");
 
 $("#track").innerHTML=[...Array(2)].map(()=>
-  ["g05","g02","g07","g04","g09","g10","g06","g08"].map(g=>`<img src="img/${g}.jpg" alt="" loading="lazy">`).join("")
+  ["g07","g04","g03","g10","g06","g08"].map(g=>`<img src="img/${g}.jpg" alt="" loading="lazy">`).join("")
 ).join("");
 
 /* filters */
